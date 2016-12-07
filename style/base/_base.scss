@@ -173,6 +173,38 @@
 
 //-----------reviews---------------------
 
+.reviews{
+  background: url("../img/background-reviews.png") center /cover no-repeat;
+
+}
+
+.reviews-list{
+  padding: 0;
+  list-style: none;
+  text-align: center;
+
+  img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+  }
+
+  p{
+    color: white;
+    font-family: "Open Sans";
+    font-size: 3vw;
+    font-style: italic;
+    line-height: 40px;
+  }
+  span{
+    color: white;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+}
+
 
 
 

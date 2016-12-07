@@ -5,6 +5,7 @@
         <title>HomeWork8</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700" rel="stylesheet">
+        <link href="/style/vendors/jquery.bxslider.css" rel="stylesheet" />
         <link rel="stylesheet" href="style/normalize.css">
         <link rel="stylesheet" href="style/style.css">
 
@@ -106,7 +107,7 @@
                     </li>
                     <li>
                         <div class="portfolio-gallery-wrapper">
-                            <img src="img/pic1.png" alt="PICTURE">
+                            <img src="img/pic2.png" alt="PICTURE">
                             <div class="hover">
                                 <h3>ABAZOO WEBSITE </h3>
                                 <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
@@ -116,7 +117,7 @@
                     </li>
                     <li>
                         <div class="portfolio-gallery-wrapper">
-                            <img src="img/pic1.png" alt="PICTURE">
+                            <img src="img/pic3.png" alt="PICTURE">
                             <div class="hover">
                                 <h3>ABAZOO WEBSITE </h3>
                                 <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
@@ -126,7 +127,7 @@
                     </li>
                     <li>
                         <div class="portfolio-gallery-wrapper">
-                            <img src="img/pic1.png" alt="PICTURE">
+                            <img src="img/pic4.png" alt="PICTURE">
                             <div class="hover">
                                 <h3>ABAZOO WEBSITE </h3>
                                 <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
@@ -136,7 +137,7 @@
                     </li>
                     <li>
                         <div class="portfolio-gallery-wrapper">
-                            <img src="img/pic1.png" alt="PICTURE">
+                            <img src="img/pic5.png" alt="PICTURE">
                             <div class="hover">
                                 <h3>ABAZOO WEBSITE </h3>
                                 <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
@@ -146,7 +147,7 @@
                     </li>
                     <li>
                         <div class="portfolio-gallery-wrapper">
-                            <img src="img/pic1.png" alt="PICTURE">
+                            <img src="img/pic6.png" alt="PICTURE">
                             <div class="hover">
                                 <h3>ABAZOO WEBSITE </h3>
                                 <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
@@ -164,16 +165,16 @@
         <section class="reviews">
             <div class="wrapper">
 
-                <ul>
+                <ul class="reviews-list bxslider">
                     <li>
-                        <img src="#" alt="PHOTO">
+                        <img src="img/photo-John-Smith.png" alt="PHOTO">
                         <p>These guys are incredible! I get my project in 10 days and it was awesome!
                             Very good service! Highly recommended!</p>
                         <span>John Smith</span>
                     </li>
                     <li>
-                        <img src="#" alt="PHOTO">
-                        <p>These guys are incredible! I get my project in 10 days and it was awesome!
+                        <img src="img/photo-John-Smith.png" alt="PHOTO">
+                        <p>These guys are incredible! I get my project in 20 days and it was awesome!
                             Very good service! Highly recommended!</p>
                         <span>John Smith</span>
                     </li>
@@ -274,8 +275,20 @@
 
         <!---------------Scripts--------------------->
 
-        <script src="https://use.fontawesome.com/34414cec8f.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
+
+
+        <script src="https://use.fontawesome.com/34414cec8f.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="/style/vendors/jquery.bxslider.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.bxslider').bxSlider({
+                    mode: 'fade',
+                    captions: true
+                });
+        });
+        </script>
     </body>
 </html>
+
