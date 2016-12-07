@@ -6,44 +6,60 @@
   li {
     display: inline-block;
     //width: 300px;
-    width: 80%;
+    width: 90%;
     height: auto;
     margin: 10px;
     position: relative;
 
-    &:hover .hover,
-    &:active .hover {
-	 opacity: 1;
+    .portfolio-gallery-wrapper{
+      position: relative;
+
+      &:hover .hover,
+      &:active .hover {
+        opacity: 1;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        //width: inherit;
+        //height: inherit;
+
+
+      }
+      .hover {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background-color: rgba(247, 96, 14, 0.8);
+        opacity: 0; //hover hide
+
+        h3{
+
+          font: 600 25px $font-primary;
+          color: $primary-light-color;
+
+        }
+        p{
+          padding: 0 10px;
+          font: 400 14px/26px $font-primary;
+          color: $primary-light-color;
+        }
+        a{}
+
+
+      }
+
+
+
     }
 
-    img {
-	 width: inherit;
-	 height: inherit;
-    }
+
+
+
 
   }
-  .hover {
-    width: inherit;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    background-color: rgba(247, 96, 14, 0.8);
-    opacity: 0; //hover hide
 
-    h3{
-
-      font: 600 25px $font-primary;
-      color: $primary-light-color;
-
-    }
-    p{
-      padding: 0 10px;
-      font: 400 14px/26px $font-primary;
-      color: $primary-light-color;
-    }
-    a{}
-
-
-  }
 }
 
