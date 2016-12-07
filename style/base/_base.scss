@@ -1,0 +1,38 @@
+//------------base styles---------------
+
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  border: 1px dotted gray;
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+
+//----------------header------------
+
+.section-bg {
+  background: url("../img/background-header.png")  center /cover no-repeat;
+
+}
+
+.header {
+  height: 130px;
+
+
+  .logo {
+    float: left;
+    margin: 0;
+  }
+
+  .nav {
+    float: right;
+  }
+
+
+}
