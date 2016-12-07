@@ -2,3 +2,10 @@
 	font-family: $font-primary;
 	font-weight: ($pt);
 }
+
+@mixin transition($s) {
+  -webkit-transition-duration: $s;
+  -o-transition-duration: $s;
+  -moz-transition-duration: $s;
+  transition-duration: $s;
+}

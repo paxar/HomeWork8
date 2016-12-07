@@ -1,7 +1,13 @@
 //------------base styles---------------
 
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .wrapper {
-  width: 320px;
+  width: auto;
   margin: 0 auto;
   overflow: hidden;
 
@@ -9,9 +15,25 @@
 
 }
 
+.brand-color {
+  color: $brand-color;
+}
+
 @media only screen and (min-width: 768px) {
 
+  .wrapper {
+    width: 768px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    border: 1px dotted gray;
+
+  }
+
+
 }
+
+
 
 
 //----------------header------------
@@ -19,10 +41,12 @@
 .section-bg {
   background: url("../img/background-header.png")  center /cover no-repeat;
 
+
 }
 
 .header {
-  height: 130px;
+  //height: 130px;
+  padding: 10px 0;
 
 
   .logo {
@@ -32,7 +56,102 @@
 
   .nav {
     float: right;
+    margin-top: 12px;
+
+    a {
+      text-decoration: none;
+      color: $primary-light-color;
+      font: 400 16px $font-primary;
+      
+      span {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+//---------------- hero------------------
+
+.hero{
+
+  h2 {
+
+
+    font: 700 50px $font-primary;
+    text-align: center;
+    color: $primary-light-color;
+
+  }
+  p{
+    font: 400 20px/35px "Open Sans", sans-serif;
+    color: $primary-light-color;
+    text-align: center;
+    padding: 0 10px;
+
+  }
+  ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin: 10px;
+    }
   }
 
+  .scroll {
+    //margin:0 auto;
+    display: none;
+  }
+}
+
+//----------------icons ----------------
+
+.icons {
+
+  .icon-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      width: 180px;
+      text-align: center;
+
+
+
+      .icon-wrapper {
+        display: block;
+       width: 150px;
+        height: 150px;
+        border: 1px solid rgba(59, 67, 76, 0.3);
+        border-radius: 50%;
+        line-height: 150px;
+        margin: 0 auto;
+
+        img {
+          vertical-align: middle;
+        }
+      }
+
+      h3 {
+        font: 600 16px $font-primary;
+
+      }
+      p{
+        font: 400 14px/26px $font-primary;
+      }
+
+    }
+
+  }
 
 }
+
+//-------------- subscribe ----------------
+
+
+
+
