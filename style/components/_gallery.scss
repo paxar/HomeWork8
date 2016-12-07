@@ -1,0 +1,46 @@
+.portfolio-gallery {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+
+  li {
+    width: 300px;
+    height: auto;
+    position: relative;
+
+    &:hover .hover,
+    &:active .hover {
+	 opacity: 1;
+    }
+
+    img {
+	 width: inherit;
+	 height: inherit;
+    }
+
+  }
+  .hover {
+    width: inherit;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(247, 96, 14, 0.8);
+    opacity: 0; //hover hide
+
+    h3{
+
+      font: 600 25px $font-primary;
+      color: $primary-light-color;
+
+    }
+    p{
+      padding: 0 10px;
+      font: 400 14px/26px $font-primary;
+      color: $primary-light-color;
+    }
+    a{}
+
+
+  }
+}
+

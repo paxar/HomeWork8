@@ -4,7 +4,7 @@
   display: block;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
-  font: 400 16px $font-primary ;
+  font: 400 16px $font-primary;
   text-align: center;
   text-decoration: none;
   color: $primary-light-color;
@@ -12,11 +12,35 @@
   line-height: 50px;
 
   &:hover,
-  &:active{
+  &:active {
     background-color: $brand-color;
   }
-
 }
+
+  .button-subscribe {
+    width: 80%;
+    height: 50px;
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    font: 400 16px $font-primary;
+    text-align: center;
+    text-decoration: none;
+    color: $primary-light-color;
+    vertical-align: middle;
+    line-height: 50px;
+
+    padding: 0;
+    background-color: $brand-color;
+
+    margin: 10px auto 0;
+    &:hover,
+    &:active {
+	 background-color: lighten($brand-color, 5%);
+    }
+  }
+
+
 
 .scroll {
   width: 35px;

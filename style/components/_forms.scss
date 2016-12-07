@@ -6,6 +6,25 @@
 
     li {
 	 display: inline-block;
+
+	 input[type="email"] {
+
+	   width: 80%;
+	   height: 50px;
+	   display: block;
+	   margin: 0 auto;
+
+	   background-color: white;
+	   border-radius: 10px;
+	 }
+	 .button-std {
+	   width: 269px;
+	   padding: 0;
+	   background-color: $brand-color;
+	   &:hover {
+		background-color: lighten($brand-color, 5%);
+	   }
+	 }
     }
   }
 }
