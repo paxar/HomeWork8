@@ -124,8 +124,10 @@
 
     li {
       display: inline-block;
-      width: 180px;
+      //width: 180px;
+      width: 100%;
       text-align: center;
+      //float: left;
 
       .icon-wrapper {
         display: block;
