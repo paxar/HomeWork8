@@ -17,28 +17,7 @@
   }
 }
 
-  .button-subscribe {
-    width: 80%;
-    height: 50px;
-    display: block;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    font: 400 16px $font-primary;
-    text-align: center;
-    text-decoration: none;
-    color: $primary-light-color;
-    vertical-align: middle;
-    line-height: 50px;
 
-    padding: 0;
-    background-color: $brand-color;
-
-    margin: 10px auto 0;
-    &:hover,
-    &:active {
-	 background-color: lighten($brand-color, 5%);
-    }
-  }
 
 
 
@@ -54,5 +33,76 @@
     line-height: 35px;
     text-align: center;
     color: $primary-light-color;
+  }
+}
+
+.button-subscribe {
+  width: 80%;
+  height: 50px;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  font: 400 16px $font-primary;
+  text-align: center;
+  text-decoration: none;
+  color: $primary-light-color;
+  vertical-align: middle;
+  line-height: 50px;
+
+  padding: 0;
+  background-color: $brand-color;
+
+  margin: 10px auto 0;
+  &:hover,
+  &:active {
+    background-color: lighten($brand-color, 5%);
+  }
+}
+
+
+
+.hover-button {
+  display: block;
+  width: 210px;
+  height: 50px;
+  margin: 0 auto;
+  //background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+
+  //color: #f7600e;
+  color: $primary-light-color;
+  font: 600 16px $font-primary;
+  text-decoration: none;
+  line-height: 50px;
+  vertical-align: middle;
+
+  &:hover,
+  &:active {
+    color: $brand-color;
+    background-color: white;
+
+  }
+}
+
+.button-portfolio{
+  display: block;
+  width: 210px;
+  height: 50px;
+  margin: 0 auto;
+  border: 1px solid rgba(59, 67, 76, 0.2);
+  border-radius: 10px;
+
+  color: $primary-dark-color;
+  font: 600 16px $font-primary;
+  text-align: center;
+  text-decoration: none;
+  line-height: 50px;
+  vertical-align: middle;
+  &:hover,
+  &:active {
+    background-color: $brand-color;
+    color: white;
+
   }
 }
