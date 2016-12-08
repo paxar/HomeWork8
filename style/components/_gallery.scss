@@ -54,6 +54,11 @@
     width: 40%;
   }
 }
+@media only screen and (min-width: 970px) {
+  .portfolio-gallery li {
+    width: 28%;
+  }
+}
 
 //-------------persons gallery -----------------
 
