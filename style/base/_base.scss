@@ -21,6 +21,14 @@
   padding: 0 10px;
 }
 
+.bx-wrapper {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  background: none;
+}
+
 .wrapper {
   width: auto;
   margin: 0 auto;
@@ -176,6 +184,10 @@
 .reviews{
   background: url("../img/background-reviews.png") center /cover no-repeat;
 
+  .bx-wrapper {
+    margin: 0;
+  }
+
 }
 
 .reviews-list{
@@ -186,10 +198,12 @@
   img{
     width: 130px;
     height: 130px;
+    margin: 0 auto;
     border-radius: 50%;
   }
 
   p{
+    padding: 0 25px;
     color: white;
     font-family: "Open Sans";
     font-size: 3vw;
@@ -197,13 +211,21 @@
     line-height: 40px;
   }
   span{
+    display: block;
+    margin-bottom: 20px;
     color: white;
     font-family: "Open Sans";
     font-size: 18px;
     font-weight: 600;
     line-height: 40px;
   }
+
 }
+
+//--------------persons-----------------
+
+
+
 
 
 //-----------------feedback-----------------
