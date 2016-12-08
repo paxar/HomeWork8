@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700" rel="stylesheet">
         <link href="style/vendors/jquery.bxslider.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="style/normalize.css">
+        <!--<link rel="stylesheet" href="style/normalize.css">-->
         <link rel="stylesheet" href="style/style.css">
 
     </head>
@@ -321,8 +321,9 @@
             <div class="wrapper">
 
                 <span class="footer-info">© 2015 COPYRIGHT DESIGN STUDIO</span>
-                 <a class="footer-logo" href="#"><img src="img/logo-footer.png" alt="logo"></a>
-                <span class="footer-logo">DESIGNED BY </span>
+
+                <span class="footer-logo">DESIGNED BY <a class="footer-logo" href="#"><img src="img/logo-footer.png"
+                                                                                           alt="logo"></a> </span>
 
 
             </div>
@@ -347,7 +348,6 @@
             $(document).ready(function () {
                 $('.persons-slider').bxSlider({
                     captions: false
-
                 });
             });
         </script>

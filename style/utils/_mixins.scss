@@ -1,7 +1,4 @@
-@mixin font($pt) {
-	font-family: $font-primary;
-	font-weight: ($pt);
-}
+
 
 @mixin transition($s) {
   -webkit-transition-duration: $s;

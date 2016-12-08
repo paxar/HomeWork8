@@ -52,11 +52,9 @@
 	   background-color: white;
 	   border-radius: 10px;
 	   outline: none;
+	   font: 400 16px $font-primary;
+	   color: $primary-dark-color;
 
-	   color: #3b434c;
-	   font-family: "Open Sans";
-	   font-size: 16px;
-	   font-weight: 400;
 
 	 }
 	 textarea{
@@ -71,10 +69,8 @@
 	   background-color: white;
 	   border-radius: 10px;
 
-	   color: #3b434c;
-	   font-family: "Open Sans";
-	   font-size: 16px;
-	   font-weight: 400;
+	   font: 400 16px $font-primary;
+	   color: $primary-dark-color;
 	 }
 	 .button-submit{}
     }

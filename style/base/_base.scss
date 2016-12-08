@@ -206,20 +206,18 @@
 
   p{
     padding: 0 25px;
-    color: white;
-    font-family: "Open Sans";
-    font-size: 3vw;
-    font-style: italic;
-    line-height: 40px;
+    font: italic 20px/40px $font-primary;
+    color: $primary-light-color;
+
   }
   span{
     display: block;
-    margin-bottom: 20px;
-    color: white;
-    font-family: "Open Sans";
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 40px;
+    margin-bottom: 30px;
+
+    font: 600 18px $font-primary;
+
+    color: $primary-light-color;
+
   }
 
 }
@@ -243,7 +241,7 @@
   .feedback-icons{
 
     li{
-      margin:0 10px;
+      margin:0 1%;
     }
     a {
       width: 43px;
@@ -269,7 +267,10 @@
   padding: 25px 0;
 
   .footer-info{
-    float: left;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+   // float: left;
 
     color: white;
     font-family: "Open Sans";
@@ -277,7 +278,10 @@
     font-weight: 400;
   }
   .footer-logo{
-    float: right;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    //float: right;
 
     color: white;
     font-family: "Open Sans";
@@ -286,6 +290,7 @@
 
     img{
       margin-top: 3px;
+
     }
   }
 }
