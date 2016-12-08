@@ -29,10 +29,9 @@
   background: none;
 }
 
-
-
 .wrapper {
   width: auto;
+
   margin: 0 auto;
   overflow: hidden;
 
@@ -43,7 +42,33 @@
 @media only screen and (min-width: 768px) {
 
   .wrapper {
-    width: 768px;
+    width: auto;
+    margin: 0 auto;
+    overflow: hidden;
+
+    border: 1px dotted gray;
+
+  }
+
+}
+
+@media only screen and (min-width: 970px) {
+
+  .wrapper {
+    width: auto;
+    margin: 0 auto;
+    overflow: hidden;
+
+    border: 1px dotted gray;
+
+  }
+
+}
+
+@media only screen and (min-width: 1170px) {
+
+  .wrapper {
+    width: 1170px;
     margin: 0 auto;
     overflow: hidden;
 
@@ -85,6 +110,9 @@
   }
 }
 
+@media only screen and (min-width: 768px) {
+}
+
 //---------------- hero------------------
 
 .hero {
@@ -117,10 +145,9 @@
     }
   }
 
-  .scroll {
-    //margin:0 auto;
-    display: none;
-  }
+}
+
+@media only screen and (min-width: 768px) {
 }
 
 //----------------icons ----------------
@@ -167,6 +194,26 @@
 
 }
 
+@media only screen and (min-width: 768px) {
+  .icons .icon-list li {
+    width: 40%;
+    p{
+      width: 70%;
+      margin: 10px auto;
+    }
+  }
+}
+@media only screen and (min-width: 970px) {
+  .icons .icon-list li {
+    width: 20%;
+    p{
+      width: 178px;
+      margin: 10px auto;
+    }
+  }
+}
+
+
 //-------------- subscribe ----------------
 
 .subscribe {
@@ -180,10 +227,9 @@
 
 }
 
-
 //-----------reviews---------------------
 
-.reviews{
+.reviews {
   background: url("../img/background-reviews.png") center /cover no-repeat;
 
   .bx-wrapper {
@@ -192,25 +238,25 @@
 
 }
 
-.reviews-list{
+.reviews-list {
   padding: 0;
   list-style: none;
   text-align: center;
 
-  img{
+  img {
     width: 130px;
     height: 130px;
     margin: 0 auto;
     border-radius: 50%;
   }
 
-  p{
+  p {
     padding: 0 25px;
     font: italic 20px/40px $font-primary;
     color: $primary-light-color;
 
   }
-  span{
+  span {
     display: block;
     margin-bottom: 30px;
 
@@ -222,26 +268,31 @@
 
 }
 
+@media only screen and (min-width: 768px) {
+}
+
 //--------------persons-----------------
-
-
-
-
+@media only screen and (min-width: 768px) {
+  .persons .persons-wrapper {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
 
 //-----------------feedback-----------------
-.feedback{
+.feedback {
   background: url("../img/background-feedback.png") center /cover no-repeat;
-  h2{
+  h2 {
     color: $primary-light-color;
   }
-  p{
+  p {
     color: $primary-light-color;
   }
 
-  .feedback-icons{
+  .feedback-icons {
 
-    li{
-      margin:0 1%;
+    li {
+      margin: 0 1%;
     }
     a {
       width: 43px;
@@ -250,34 +301,36 @@
       .fa {
         line-height: 43px;
         font-size: 25px;
-        }
-      .fa-dribbble{
+      }
+      .fa-dribbble {
         font-size: 35px;
       }
     }
-
 
   }
 
 }
 
+@media only screen and (min-width: 768px) {
+}
+
 //--------------footer----------------
-.footer{
+.footer {
   background-color: #3b434c;
   padding: 25px 0;
 
-  .footer-info{
+  .footer-info {
     display: block;
     margin: 0 auto;
     width: 80%;
-   // float: left;
+    // float: left;
 
     color: white;
     font-family: "Open Sans";
     font-size: 16px;
     font-weight: 400;
   }
-  .footer-logo{
+  .footer-logo {
     display: block;
     margin: 0 auto;
     width: 80%;
@@ -288,11 +341,14 @@
     font-size: 16px;
     font-weight: 400;
 
-    img{
+    img {
       margin-top: 3px;
 
     }
   }
+}
+
+@media only screen and (min-width: 768px) {
 }
 
 

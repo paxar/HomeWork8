@@ -5,74 +5,98 @@
     padding: 0;
 
     li {
-	 display: block;
+      display: block;
 
-	 input[type="email"] {
+      input[type="email"] {
 
-	   width: 80%;
-	   height: 50px;
-	   display: block;
-	   margin: 0 auto;
-      outline: none;
-	   background-color: white;
-	   border-radius: 10px;
+        width: 80%;
+        height: 50px;
+        display: block;
+        margin: 0 auto;
+        outline: none;
+        background-color: white;
+        border-radius: 10px;
 
-	   color: #3b434c;
-	   font-family: "Open Sans";
-	   font-size: 16px;
-	   font-weight: 400;
-	 }
-	 .button-std {
-	   width: 269px;
-	   padding: 0;
-	   background-color: $brand-color;
-	   &:hover {
-		background-color: lighten($brand-color, 5%);
-	   }
-	 }
+        color: #3b434c;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 400;
+      }
     }
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .subscribe-form ul li input[type="email"] {
+    width: 60%;
+  }
 
-.feedback-form{
-  ul{
+}
+@media only screen and (min-width: 970px) {
+  .subscribe-form ul {
+    text-align: center;
+    li {
+      display: inline-block;
+      input[type="email"] {
+        width: 400px;
+      }
+    }
+  }
+}
+
+//----------------------feedback-----------
+.feedback-form {
+  ul {
     list-style: none;
     padding: 0;
 
-    li{
-	 input[type="email"],
-	 input[type="text"]{
-	   width: 80%;
-	   height: 50px;
-	   display: block;
-	   margin: 0 auto;
-	   margin-bottom: 10px;
-	   padding-left: 10px;
-	   background-color: white;
-	   border-radius: 10px;
-	   outline: none;
-	   font: 400 16px $font-primary;
-	   color: $primary-dark-color;
+    li {
+      input[type="email"],
+      input[type="text"] {
+        width: 80%;
+        height: 50px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        background-color: white;
+        border-radius: 10px;
+        outline: none;
+        font: 400 16px $font-primary;
+        color: $primary-dark-color;
 
+      }
+      textarea {
+        width: 80%;
+        height: 199px;
+        display: block;
+        margin: 0 auto;
+        padding-left: 10px;
+        padding-top: 10px;
+        resize: none;
+        outline: none;
+        background-color: white;
+        border-radius: 10px;
 
-	 }
-	 textarea{
-	   width: 80%;
-	   height: 199px;
-	   display: block;
-	   margin: 0 auto;
-	   padding-left: 10px;
-	   padding-top: 10px;
-	   resize: none;
-	   outline: none;
-	   background-color: white;
-	   border-radius: 10px;
-
-	   font: 400 16px $font-primary;
-	   color: $primary-dark-color;
-	 }
-	 .button-submit{}
+        font: 400 16px $font-primary;
+        color: $primary-dark-color;
+      }
+      .button-submit {
+      }
     }
   }
+}
+
+@media only screen and (min-width: 768px) {
+  .feedback-form ul li {
+    input[type="email"],
+    input[type="text"] {
+      width: 60%;
+    }
+    textarea {
+      width: 60%;
+    }
+
+  }
+
 }

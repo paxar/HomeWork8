@@ -24,7 +24,7 @@
 .scroll {
   width: 35px;
   height: 35px;
-  display: block;
+  display: none;
   border: 2px solid white;
   border-radius: 50%;
   .fa {
@@ -57,6 +57,17 @@
   &:hover,
   &:active {
     background-color: lighten($brand-color, 5%);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .button-subscribe,
+  .button-submit{
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 970px) {
+  .button-subscribe{
+    width: 200px;
   }
 }
 
