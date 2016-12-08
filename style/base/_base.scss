@@ -29,6 +29,8 @@
   background: none;
 }
 
+
+
 .wrapper {
   width: auto;
   margin: 0 auto;
@@ -234,7 +236,58 @@
   h2{
     color: $primary-light-color;
   }
+  p{
+    color: $primary-light-color;
+  }
 
+  .feedback-icons{
+
+    li{
+      margin:0 10px;
+    }
+    a {
+      width: 43px;
+      height: 43px;
+
+      .fa {
+        line-height: 43px;
+        font-size: 25px;
+        }
+      .fa-dribbble{
+        font-size: 35px;
+      }
+    }
+
+
+  }
+
+}
+
+//--------------footer----------------
+.footer{
+  background-color: #3b434c;
+  padding: 25px 0;
+
+  .footer-info{
+    float: left;
+
+    color: white;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .footer-logo{
+    float: right;
+
+    color: white;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+
+    img{
+      margin-top: 3px;
+    }
+  }
 }
 
 

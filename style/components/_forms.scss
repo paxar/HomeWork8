@@ -16,6 +16,11 @@
       outline: none;
 	   background-color: white;
 	   border-radius: 10px;
+
+	   color: #3b434c;
+	   font-family: "Open Sans";
+	   font-size: 16px;
+	   font-weight: 400;
 	 }
 	 .button-std {
 	   width: 269px;
@@ -35,6 +40,43 @@
     list-style: none;
     padding: 0;
 
-    li{}
+    li{
+	 input[type="email"],
+	 input[type="text"]{
+	   width: 80%;
+	   height: 50px;
+	   display: block;
+	   margin: 0 auto;
+	   margin-bottom: 10px;
+	   padding-left: 10px;
+	   background-color: white;
+	   border-radius: 10px;
+	   outline: none;
+
+	   color: #3b434c;
+	   font-family: "Open Sans";
+	   font-size: 16px;
+	   font-weight: 400;
+
+	 }
+	 textarea{
+	   width: 80%;
+	   height: 199px;
+	   display: block;
+	   margin: 0 auto;
+	   padding-left: 10px;
+	   padding-top: 10px;
+	   resize: none;
+	   outline: none;
+	   background-color: white;
+	   border-radius: 10px;
+
+	   color: #3b434c;
+	   font-family: "Open Sans";
+	   font-size: 16px;
+	   font-weight: 400;
+	 }
+	 .button-submit{}
+    }
   }
 }

@@ -21,6 +21,7 @@
 	   color: white;
 	   line-height: 25px;
 	   vertical-align: middle;
+	   @include transition(0.4s)
 	 }
 
 	 .fa-facebook{
@@ -42,6 +43,13 @@
 	 .fa-behance{
 	   background-color: #009bd5;
 	 }
+	 &:hover .fa {
+	   background-color: $brand-color;
+	   @include transition(0.4s)
+
+
+    }
+
     }
   }
 }
