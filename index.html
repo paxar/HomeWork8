@@ -321,10 +321,12 @@
         <footer class="footer">
             <div class="wrapper">
 
-                <span class="footer-info">© 2015 COPYRIGHT DESIGN STUDIO</span>
+                <ul class="footer-list">
+                    <li class="footer-info">© 2015 COPYRIGHT DESIGN STUDIO</li>
+                    <li class="footer-logo">DESIGNED BY <a href="#"><img src="img/logo-footer.png" alt="logo"></a> </li>
+                </ul>
 
-                <span class="footer-logo">DESIGNED BY <a class="footer-logo" href="#"><img src="img/logo-footer.png"
-                                                                                           alt="logo"></a> </span>
+
 
 
             </div>
@@ -349,7 +351,9 @@
             $(document).ready(function () {
                 $('.persons-slider').bxSlider({
                     captions: false,
-                    controls: false
+                    controls: false,
+                    minSlides: 1,
+                    maxSlides: 4
                 });
             });
         </script>

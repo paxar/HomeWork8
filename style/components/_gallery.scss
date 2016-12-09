@@ -69,6 +69,7 @@
 
   > li {
 
+
     .persons-list-wrapper {
       width: 80%;
       margin: 0 auto;
@@ -110,6 +111,9 @@
       .fa.fa-google-plus {
         background-color: #cccccc;
         @include transition(0.2s);
+	   &:hover{
+		background-color: $brand-color;
+	   }
       }
 
       p {
