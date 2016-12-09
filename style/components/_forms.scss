@@ -39,10 +39,17 @@
       display: inline-block;
       input[type="email"] {
         width: 400px;
+	   margin-right: 25px;
       }
     }
   }
 }
+@media only screen and (min-width: 1170px) {
+  .subscribe-form ul li input[type="email"]{
+    width: 560px;
+  }
+}
+
 
 //----------------------feedback-----------
 .feedback-form {
@@ -116,3 +123,4 @@
     }
   }
 }
+
