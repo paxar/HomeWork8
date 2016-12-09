@@ -325,7 +325,19 @@
 
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 970px) {
+  .feedback .feedback-wrapper{
+    width: 60%;
+    margin: 0 auto;
+    .feedback-icons{
+	 float: right;
+	 margin-top: -45px;
+    }
+
+    li{
+	 margin: 0 5px;
+    }
+  }
 }
 
 //--------------footer----------------

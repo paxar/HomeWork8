@@ -47,7 +47,9 @@
 //----------------------feedback-----------
 .feedback-form {
   width: 80%;
+  overflow: hidden;
   margin: 0 auto;
+
   ul {
     list-style: none;
     padding: 0;
@@ -97,17 +99,20 @@
   }
 }
 @media only screen and (min-width: 970px) {
-  .feedback-form ul li {
-    input[type="email"]{
-      width: 49%;
-      float: left;
-    }
-    input[type="text"] {
-      float: right;
-      width: 49%;
-    }
-    textarea {
-      width: 100%;
+  .feedback-form {
+    width: 100%;
+    ul li {
+	 input[type="email"] {
+	   width: 49%;
+	   float: left;
+	 }
+	 input[type="text"] {
+	   float: right;
+	   width: 49%;
+	 }
+	 textarea {
+	   width: 100%;
+	 }
     }
   }
 }
