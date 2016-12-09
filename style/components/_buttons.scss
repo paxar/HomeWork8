@@ -17,11 +17,7 @@
   }
 }
 
-
-
-
-
-.scroll {
+.scroll-button {
   width: 35px;
   height: 35px;
   display: none;
@@ -38,22 +34,23 @@
     color: $primary-light-color;
   }
 }
+
 @media only screen and (min-width: 970px) {
-  .scroll{
+  .scroll-button {
     display: block;
     margin-top: 15%;
   }
 }
+
 @media only screen and (min-width: 1170px) {
-  .scroll{
+  .scroll-button {
     margin-top: 180px;
 
   }
 }
 
-
 .button-subscribe,
-.button-submit{
+.button-submit {
   width: 100%;
   height: 51px;
   display: block;
@@ -75,48 +72,47 @@
     background-color: lighten($brand-color, 5%);
   }
 }
-.button-subscribe{
+
+.button-subscribe {
   width: 80%;
 }
+
 @media only screen and (min-width: 768px) {
-  .button-subscribe{
+  .button-subscribe {
     width: 60%;
   }
-  .button-submit{
+  .button-submit {
     width: 100%;
   }
 }
+
 @media only screen and (min-width: 970px) {
-  .button-subscribe{
+  .button-subscribe {
     width: 200px;
   }
 }
+
 @media only screen and (min-width: 1170px) {
-  .button-subscribe{
+  .button-subscribe {
     width: 270px;
   }
 }
 
 @media only screen and (min-width: 970px) {
-  .button-submit{
+  .button-submit {
     float: left;
     //width: 30%;
     width: 210px;
   }
 }
 
-
-
 .hover-button {
   display: block;
   width: 210px;
   height: 50px;
   margin: 0 auto;
-  //background-color: white;
   border: 1px solid white;
   border-radius: 10px;
-
-  //color: #f7600e;
   color: $primary-light-color;
   font: 600 16px $font-primary;
   text-decoration: none;
@@ -131,14 +127,13 @@
   }
 }
 
-.button-portfolio{
+.button-portfolio {
   display: block;
   width: 210px;
   height: 50px;
   margin: 0 auto;
   border: 1px solid rgba(59, 67, 76, 0.2);
   border-radius: 10px;
-
   color: $primary-dark-color;
   font: 600 16px $font-primary;
   text-align: center;
@@ -152,13 +147,15 @@
 
   }
 }
+
 @media only screen and (min-width: 970px) {
-  .button-portfolio{
+  .button-portfolio {
     margin-top: 7%;
   }
 }
+
 @media only screen and (min-width: 1170px) {
-  .button-portfolio{
+  .button-portfolio {
     margin-top: 80px;
   }
 }

@@ -8,7 +8,6 @@
       display: block;
 
       input[type="email"] {
-
         width: 80%;
         height: 50px;
         display: block;
@@ -16,11 +15,8 @@
         outline: none;
         background-color: white;
         border-radius: 10px;
-
-        color: #3b434c;
-        font-family: "Open Sans";
-        font-size: 16px;
-        font-weight: 400;
+        font: 400 16px $font-primary;
+        color: $primary-dark-color;
       }
     }
   }
@@ -30,8 +26,8 @@
   .subscribe-form ul li input[type="email"] {
     width: 60%;
   }
-
 }
+
 @media only screen and (min-width: 970px) {
   .subscribe-form ul {
     text-align: center;
@@ -39,17 +35,17 @@
       display: inline-block;
       input[type="email"] {
         width: 400px;
-	   margin-right: 25px;
+        margin-right: 25px;
       }
     }
   }
 }
+
 @media only screen and (min-width: 1170px) {
-  .subscribe-form ul li input[type="email"]{
+  .subscribe-form ul li input[type="email"] {
     width: 560px;
   }
 }
-
 
 //----------------------feedback-----------
 .feedback-form {
@@ -67,16 +63,15 @@
         width: 100%;
         height: 50px;
         display: block;
-        margin: 0 auto;
-        margin-bottom: 10px;
+        margin: 0 auto 10px;
         padding-left: 10px;
         background-color: white;
         border-radius: 10px;
         outline: none;
         font: 400 16px $font-primary;
         color: $primary-dark-color;
-
       }
+
       textarea {
         width: 100%;
         height: 199px;
@@ -88,7 +83,6 @@
         outline: none;
         background-color: white;
         border-radius: 10px;
-
         font: 400 16px $font-primary;
         color: $primary-dark-color;
       }
@@ -99,27 +93,27 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .feedback-form  {
+  .feedback-form {
     width: 60%;
-
 
   }
 }
+
 @media only screen and (min-width: 970px) {
   .feedback-form {
     width: 100%;
     ul li {
-	 input[type="email"] {
-	   width: 49%;
-	   float: left;
-	 }
-	 input[type="text"] {
-	   float: right;
-	   width: 49%;
-	 }
-	 textarea {
-	   width: 100%;
-	 }
+      input[type="email"] {
+        width: 49%;
+        float: left;
+      }
+      input[type="text"] {
+        float: right;
+        width: 49%;
+      }
+      textarea {
+        width: 100%;
+      }
     }
   }
 }

@@ -24,7 +24,7 @@
 
 
             <section class="hero">
-                <div class="wrapper">
+                <div class="wrapper" id="scroll">
                     <h2>WE DESIGN <span class="brand-color">THINGS</span></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
@@ -33,13 +33,13 @@
                         <li><a class="button-std" href="#">OUR WORKS</a></li>
                     </ul>
 
-                    <a class="scroll" href="#"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <a class="scroll-button" href="#icons"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
                 </div>
             </section>
 
         </div>
 
-        <section class="icons">
+        <section class="icons" id="icons">
             <div class="wrapper">
                 <ul class="icon-list">
                     <li>
@@ -291,10 +291,18 @@
                 <div class="feedback-wrapper">
                     <form class="feedback-form" action="#">
                         <ul>
-                            <li><input type="email" placeholder="Your Email"></li>
-                            <li><input type="text" placeholder="Subject"></li>
-                            <li><textarea name="message" id="message" placeholder="Your Message"></textarea></li>
-                            <li><input class="button-submit" type="submit" value="HIRE US"></li>
+                            <li>
+                                <input type="email" placeholder="Your Email" required>
+                            </li>
+                            <li>
+                                <input type="text" placeholder="Subject" required>
+                            </li>
+                            <li>
+                                <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                            </li>
+                            <li>
+                                <input class="button-submit" type="submit" value="HIRE US">
+                            </li>
                         </ul>
                     </form>
 
@@ -354,6 +362,16 @@
                     controls: false,
                     minSlides: 1,
                     maxSlides: 4
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#scroll").on("click","a", function (event) {
+                    event.preventDefault();
+                    var id  = $(this).attr('href'),
+                        top = $(id).offset().top;
+                    $('body,html').animate({scrollTop: top}, 700);
                 });
             });
         </script>

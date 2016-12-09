@@ -8,8 +8,7 @@
 
 //--------------captions ----------------------
 .captions {
-  margin: 0;
-  margin-bottom: 1%;
+  margin: 0 0 1%;
   font: 600 35px $font-primary;
   text-align: center;
   color: $primary-dark-color;
@@ -62,6 +61,7 @@
   }
 }
 
+//---------- bxslider------------
 .bx-wrapper {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
@@ -70,64 +70,29 @@
   background: none;
 }
 
+//----------wrapper-------------
+
 .wrapper {
   width: auto;
-
   margin: 0 auto;
   overflow: hidden;
-
-  border: 1px dotted gray;
-
-}
-
-@media only screen and (min-width: 768px) {
-
-  .wrapper {
-    width: auto;
-    margin: 0 auto;
-    overflow: hidden;
-
-    border: 1px dotted gray;
-
-  }
-
-}
-
-@media only screen and (min-width: 970px) {
-
-  .wrapper {
-    width: auto;
-    margin: 0 auto;
-    overflow: hidden;
-
-    border: 1px dotted gray;
-
-  }
-
+  //border: 1px dotted gray; //--TEST--
 }
 
 @media only screen and (min-width: 1170px) {
 
   .wrapper {
     width: 1170px;
-    margin: 0 auto;
-    overflow: hidden;
-
-    border: 1px dotted gray;
-
   }
-
 }
 
 //----------------header------------
 
 .section-bg {
   background: url("../img/background-header.png") center /cover no-repeat;
-
 }
 
 .header {
-  //height: 130px;
   padding: 5% 0;
 
   .logo {
@@ -142,24 +107,21 @@
     padding-right: 5%;
 
     a {
-	 text-decoration: none;
-	 color: $primary-light-color;
-	 font: 400 16px $font-primary;
+      text-decoration: none;
+      color: $primary-light-color;
+      font: 400 16px $font-primary;
 
-	 span {
-	   padding-right: 10px;
-	   color: white;
-	   font-family: "Open Sans";
-	   font-size: 16px;
-	   font-weight: 400;
+      span {
+        padding-right: 10px;
+        font: 400 16px $font-primary;
+        color: $primary-light-color;
+      }
 
-	 }
-	 .fa {
-	   font-size: 20px;
-	   position: relative;
-	   top: 2px;
-
-	 }
+      .fa {
+        font-size: 20px;
+        position: relative;
+        top: 2px;
+      }
     }
   }
 }
@@ -173,10 +135,10 @@
 @media only screen and (min-width: 970px) {
   .header {
     .logo {
-	 padding-left: 15px;
+      padding-left: 15px;
     }
     .nav {
-	 padding-right: 15px;
+      padding-right: 15px;
     }
   }
 }
@@ -193,49 +155,45 @@
   padding: 10% 0 5% 0;
 
   h2 {
-    margin: 0;
-    margin-bottom: 1%;
+    margin: 0 0 1%;
     font: 700 50px $font-primary;
     text-align: center;
     color: $primary-light-color;
     span {
-	 color: $brand-color;
+      color: $brand-color;
     }
-
   }
+
   p {
     margin: 0;
-    font: 400 20px/35px "Open Sans", sans-serif;
+    font: 400 20px/35px $font-primary;
     color: $primary-light-color;
     text-align: center;
     padding: 0 10px;
-
   }
+
   ul {
     list-style: none;
     text-align: center;
     padding: 0;
 
     li {
-	 display: inline-block;
-	 margin: 10px;
+      display: inline-block;
+      margin: 10px;
     }
   }
-
 }
 
 @media only screen and (min-width: 768px) {
   .hero {
     padding: 10% 0 15% 0;
     h2 {
-
-	 font-size: 60px;
+      font-size: 60px;
     }
-    p {
-	 width: 80%;
-	 margin: 0 auto;
-	 margin-bottom: 1%;
 
+    p {
+      width: 80%;
+      margin: 0 auto 1%;
     }
   }
 }
@@ -244,12 +202,12 @@
   .hero {
     padding: 10% 0 5% 0;
     h2 {
-	 font-size: 70px;
+      font-size: 70px;
     }
     p {
-	 width: 70%;
+      width: 70%;
 
-	 font-size: 25px;
+      font-size: 25px;
     }
   }
 }
@@ -258,14 +216,13 @@
   .hero {
     padding: 100px 0 45px 0;
     h2 {
-	 margin-bottom: 10px;
+      margin-bottom: 10px;
     }
     p {
-	 width: 775px;
-	 margin-bottom: 55px;
+      width: 775px;
+      margin-bottom: 55px;
     }
   }
-
 }
 
 //----------------icons ----------------
@@ -278,47 +235,39 @@
     text-align: center;
 
     li {
-	 display: inline-block;
-	 //width: 180px;
-	 width: 80%;
-	 text-align: center;
-	 //float: left;
+      display: inline-block;
+      width: 80%;
+      text-align: center;
 
-	 .icon-wrapper {
-	   display: block;
-	   width: 150px;
-	   height: 150px;
-	   margin: 0 auto;
-	   margin-bottom: 20px;
-	   border: 1px solid rgba(59, 67, 76, 0.3);
-	   border-radius: 50%;
-	   line-height: 150px;
+      .icon-wrapper {
+        display: block;
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 20px;
+        border: 1px solid rgba(59, 67, 76, 0.3);
+        border-radius: 50%;
+        line-height: 150px;
 
-	   img {
-		vertical-align: middle;
-	   }
-	 }
-
-	 h3 {
-	   font: 600 16px $font-primary;
-
-	 }
-	 p {
-	   font: 400 14px/26px $font-primary;
-	 }
-
+        img {
+          vertical-align: middle;
+        }
+      }
+      h3 {
+        font: 600 16px $font-primary;
+      }
+      p {
+        font: 400 14px/26px $font-primary;
+      }
     }
-
   }
-
 }
 
 @media only screen and (min-width: 768px) {
   .icons .icon-list li {
     width: 40%;
     p {
-	 width: 70%;
-	 margin: 10px auto;
+      width: 70%;
+      margin: 10px auto;
     }
   }
 }
@@ -328,11 +277,11 @@
     padding: 85px 0;
 
     .icon-list li {
-	 width: 20%;
-	 margin: 0 20px;
-	 p {
-	   width: 178px;
-	 }
+      width: 20%;
+      margin: 0 20px;
+      p {
+        width: 178px;
+      }
     }
   }
 }
@@ -341,7 +290,6 @@
 
 .subscribe {
   background: url("../img/bacground-subscribe.png") center /cover no-repeat;
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -360,10 +308,6 @@
 }
 
 //-------------------------- portfolio-----------
-
-.portfolio {
-
-}
 
 @media only screen and (min-width: 768px) {
   .portfolio {
@@ -391,7 +335,6 @@
   .bx-wrapper {
     margin: 0;
   }
-
 }
 
 .reviews-list {
@@ -410,18 +353,14 @@
     padding: 0 25px;
     font: italic 20px/40px $font-primary;
     color: $primary-light-color;
-
   }
+
   span {
     display: block;
     margin-bottom: 30px;
-
     font: 600 18px $font-primary;
-
     color: $primary-light-color;
-
   }
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -433,26 +372,33 @@
 @media only screen and (min-width: 970px) {
   .reviews {
     padding: 7% 0 7%;
+    .reviews-list p {
+      width: 80%;
+      margin: 0 auto;
+      font-size: 25px;
+    }
   }
 }
 
 @media only screen and (min-width: 1170px) {
   .reviews {
     padding: 90px 0 140px;
+    .reviews-list p {
+      width: 800px;
+      margin: 30px auto;
+    }
   }
 }
 
 //--------------persons-----------------
 @media only screen and (min-width: 768px) {
-  .persons{
+  .persons {
     padding: 4% 0 5%;
     .persons-wrapper {
-	 //width: 70%;
-	 margin: 0 auto;
+      //width: 70%;
+      margin: 0 auto;
     }
-
   }
-
 }
 
 @media only screen and (min-width: 970px) {
@@ -465,15 +411,16 @@
   .persons {
     padding: 90px 0 150px
   }
-
 }
 
 //-----------------feedback-----------------
 .feedback {
   background: url("../img/background-feedback.png") center /cover no-repeat;
+
   h2 {
     color: $primary-light-color;
   }
+
   p {
     color: $primary-light-color;
   }
@@ -481,24 +428,25 @@
   .feedback-icons {
 
     li {
-	 margin: 0 1%;
+      margin: 0 1%;
     }
+
     a {
-	 width: 43px;
-	 height: 43px;
+      width: 43px;
+      height: 43px;
 
-	 .fa {
-	   line-height: 43px;
-	   font-size: 25px;
-	 }
-	 .fa-dribbble {
-	   font-size: 35px;
-	 }
+      .fa {
+        line-height: 43px;
+        font-size: 25px;
+      }
+
+      .fa-dribbble {
+        font-size: 35px;
+      }
     }
-
   }
-
 }
+
 @media only screen and (min-width: 768px) {
   .feedback {
     padding: 5% 0 5%;
@@ -510,16 +458,16 @@
     padding: 9% 0 10%;
 
     .feedback-wrapper {
-	 width: 60%;
-	 margin: 0 auto;
-	 .feedback-icons {
-	   float: right;
-	   margin-top: -45px;
-	 }
+      width: 60%;
+      margin: 0 auto;
+      .feedback-icons {
+        float: right;
+        margin-top: -45px;
+      }
 
-	 li {
-	   margin: 0 5px;
-	 }
+      li {
+        margin: 0 5px;
+      }
     }
   }
 }
@@ -528,10 +476,9 @@
   .feedback {
     padding: 90px 0 150px;
     .feedback-wrapper {
-	 width: 830px;
+      width: 830px;
     }
   }
-
 }
 
 //--------------footer----------------
@@ -546,24 +493,22 @@
     text-align: center;
 
     li {
-	 display: inline-block;
-
-	 color: white;
-	 font-family: "Open Sans";
-	 font-size: 16px;
-	 font-weight: 400;
-
+      display: inline-block;
+      font: 400 16px $font-primary;
+      color: $primary-light-color;
     }
+
     .footer-info {
-	 width: 90%;
+      width: 90%;
     }
-    .footer-logo {
-	 width: 90%;
 
-	 img {
-	   position: relative;
-	   top: 2px;
-	 }
+    .footer-logo {
+      width: 90%;
+
+      img {
+        position: relative;
+        top: 2px;
+      }
     }
   }
 
@@ -571,18 +516,19 @@
 
 @media only screen and (min-width: 768px) {
   .footer .footer-list {
+
     .footer-info {
-	 width: 49%;
-	 padding-left: 5%;
-	 text-align: left;
+      width: 49%;
+      padding-left: 5%;
+      text-align: left;
     }
+
     .footer-logo {
-	 width: 49%;
-	 padding-right: 5%;
-	 text-align: right;
+      width: 49%;
+      padding-right: 5%;
+      text-align: right;
     }
   }
-
 }
 
 
