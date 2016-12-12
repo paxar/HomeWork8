@@ -23,7 +23,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .subscribe-form ul li input[type="email"] {
+  .subscribe-form ul li input[type="email"] { // в таком случае лучше было просто в самом селекторе выше дописать медиа запрос 
     width: 60%;
   }
 }
@@ -42,7 +42,7 @@
 }
 
 @media only screen and (min-width: 1170px) {
-  .subscribe-form ul li input[type="email"] {
+  .subscribe-form ul li input[type="email"] { // аналогично 
     width: 560px;
   }
 }

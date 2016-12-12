@@ -159,7 +159,7 @@
         }
         h3,p {
           filter: opacity(100%);
-          @include transition(0.2s)
+          @include transition(0.2s) // мог бы просто на .fa навешать и тогда оно бы применилось везде
         }
         .fa-facebook {
           background-color: #205b9f;
